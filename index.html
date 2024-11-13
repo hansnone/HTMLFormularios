@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <meta charset="UTF-8" />
+  <title>Practica html formularios</title>
+</head>
+
+<body><br><br>
+  <!-- Formulario primero -->
+  <div class="w3-container" style="width: 50%; margin: auto;">
+    <form>
+      <h1>Primer formulario</h1>
+      <fieldset>
+        <legend>datos personales</legend><br>
+        <input type="radio" id="ingles" name="idiomafav" value="ingles">
+        <label for="ingles">ingles</label><br>
+        <input type="radio" id="español" name="idiomafav" value="español">
+        <label for="español">español</label><br>
+        <input type="radio" id="frances" name="idiomafav" value="frances">
+        <label for="frances">frances</label><br>
+        <br>
+        <label for="paises">elije un pais:</label><br>
+        <br>
+        <select id="paises" name="paises">
+          <option value="españa">españa</option>
+          <option value="francia">francia</option>
+          <option value="italia">italia</option>
+          <option value="alemania">alemania</option>
+        </select><br>
+        <br>
+        <label for="nombre">nombre</label>
+        <input name="nombre" placeholder="Fulano">
+        <br><br>
+        <label for="apellidos">apellidos</label>
+        <input name="apellidos" placeholder="Lopez Gonzalez"><br><br>
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <legend>Informacion complementaria</legend>
+        <select id="genero" name="genero" size="5" multiple>
+          <option value="hombre">hombre</option>
+          <option value="mujer">mujer</option>
+          <option value="pnr">prefiero no responder</option>
+        </select><br><br>
+        <input type="checkbox" id="hombre" name="hombre" value="hombre">
+        <label for="vehicle1">hombre</label><br>
+        <input type="checkbox" id="mujer" name="mujer" value="mujer">
+        <label for="vehicle1">mujer</label><br>
+        <input type="checkbox" id="pnr" name="pnr" value="pnr">
+        <label for="vehicle1">prefiero no responder</label><br><br>
+        <label for="fn">fecha de nacimiento:</label>
+        <input type="date" id="fn" name="fn">
+      </fieldset>
+    </form>
+  </div><br><br>
+  <!-- segundo primero -->
+  <div class="w3-container" style="width: 50%; margin: auto;">
+    <h1>segundo formulario</h1>
+    <form>
+      <fieldset>
+        <legend>indique sus preferencias por favor.</legend>
+        <label for="fn">elija una fecha:</label>
+        <input type="date" id="fn" name="fn"><br><br>
+        <label for="myfile">Elija un fichero:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="radio" id="amd" name="cpu" value="amd">
+        <label for="amd">amd</label>
+        <input type="radio" id="intel5" name="cpu" value="inteli5">
+        <label for="inteli5">intel i5</label>
+        <input type="radio" id="inteli7" name="cpu" value="inteli7">
+        <label for="inteli7">intel i7</label>
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <legend>Indique sus preferencias por favor:</legend>
+        <input type="radio" id="matematicas" name="matematicas" value="matematicas">
+        <label for="matematicas">matematicas</label>
+        <input type="radio" id="historia" name="historia" value="historia">
+        <label for="historia">historia</label>
+        <input type="radio" id="geografia" name="geografia" value="geografia">
+        <label for="geografia">geografia</label>
+        <input type="radio" id="lengua" name="lengua" value="lengua">
+        <label for="lengua">lengua</label><br><br>
+        <label for="nombre">nombre</label>
+        <input name="nombre" placeholder="Fulano">
+        <br><br>
+        <label for="apellidos">apellidos</label>
+        <input name="apellidos" placeholder="Lopez Gonzalez"><br><br>
+        <label for="direccion">direccion</label>
+        <input name="apellidos" placeholder="Calle quieto todo el mundo."><br><br>
+        <label for="favcolor">Elija un color:</label>
+        <input type="color" id="favcolor" name="favcolor"><br><br>
+        <textarea name="message" rows="5" cols="40">Utilice este cuadro para escribir.</textarea><br><br>
+        <label for="fn">elija una fecha:</label>
+        <input type="date" id="fn" name="fn"><br><br>
+        <select id="lng" name="idiomas">
+          <option value="ingles">ingles</option>
+          <option value="frances">frances</option>
+          <option value="italiano">italiano</option>
+          <option value="aleman">aleman</option>
+        </select><br><br>
+        <label for="appt">Elija una hora: </label>
+        <input type="time" id="appt" name="appt"><br><br>
+        <label for="myfile">Elija un fichero:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <input type="checkbox" id="hombre" name="hombre" value="hombre">
+        <label for="vehicle1">hombre</label><br>
+        <input type="checkbox" id="mujer" name="mujer" value="mujer">
+        <label for="vehicle1">mujer</label><br>
+        <input type="checkbox" id="pnr" name="pnr" value="pnr">
+        <label for="vehicle1">prefiero no responder</label><br>
+      </fieldset>
+    </form>
+  </div><br><br>
+  <!-- tercero primero -->
+  <div class="w3-container" style="width: 50%; margin: auto;">
+    <h1>tercer formulario</h1>
+    <form>
+      <fieldset>
+        <legend>Completar.</legend>
+        <label for="favcolor">Elija un color:</label>
+        <input type="color" id="favcolor" name="favcolor"><br><br>
+        <textarea name="message" rows="5" cols="40">Utilice este cuadro para escribir.</textarea><br><br>
+        <select id="lng" name="pro">
+          <option value="java">java</option>
+          <option value="csharp">csharp</option>
+          <option value="rust">rust</option>
+          <option value="python">python</option>
+        </select><br><br>
+        <input type="checkbox" id="hombre" name="hombre" value="hombre">
+        <label for="vehicle1">asir</label>
+        <input type="checkbox" id="mujer" name="mujer" value="mujer">
+        <label for="vehicle1">dam</label>
+        <input type="checkbox" id="pnr" name="pnr" value="pnr">
+        <label for="vehicle1">daw</label><br>
+      </fieldset>
+    </form>
+    <form>
+      <fieldset>
+        <legend>Rellene las opcione siguientes:</legend>
+        <label for="fn">elija una fecha:</label>
+        <input type="date" id="fn" name="fn"><br><br>
+        <label for="myfile">Elija un fichero:</label>
+        <input type="file" id="myfile" name="myfile"><br><br>
+        <select id="genero" name="genero" size="5" multiple>
+          <option value="hombre">smr</option>
+          <option value="mujer">asir</option>
+          <option value="pnr">dam</option>
+          <option value="pnr">daw</option>
+        </select><br><br>
+      </fieldset>
+    </form>
+  </div><br><br>
+  <!-- cuarto primero -->
+  <div class="w3-container" style="width: 50%; margin: auto;">
+    <h1>cuarto formulario</h1>
+    <form>
+      <fieldset>
+        <legend>Completar.</legend>
+        <input type="radio" id="matematicas" name="matematicas" value="matematicas">
+        <label for="matematicas">lenguaje de marcas</label><br>
+        <input type="radio" id="historia" name="historia" value="historia">
+        <label for="historia">programacion</label><br>
+        <input type="radio" id="geografia" name="geografia" value="geografia">
+        <label for="geografia">desarrollo de interfaces</label><br>
+        <input type="radio" id="lengua" name="lengua" value="lengua">
+        <label for="lengua">redes</label><br><br>
+        <input type="checkbox" id="hombre" name="hombre" value="hombre">
+        <label for="vehicle1">notepad</label>
+        <input type="checkbox" id="mujer" name="mujer" value="mujer">
+        <label for="vehicle1">sublime</label>
+        <input type="checkbox" id="pnr" name="pnr" value="pnr">
+        <label for="vehicle1">word</label><br><br>
+        <textarea name="message" rows="5" cols="40">Utilice este cuadro para escribir.</textarea><br><br>
+        <select id="lng" name="pro">
+          <option value="java">amd</option>
+          <option value="csharp">intel</option>
+          <option value="rust">risc-v</option>
+          <option value="python">m-apple</option>
+        </select><br><br>
+      </fieldset>
+    </form>
+  </div><br><br>
+</body>
+
+</html>
